@@ -1,9 +1,16 @@
 class Triangle
-  define_method(:initialize) do
-    # fill in later
+  define_method(:initialize) do |side1, side2, side3|
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
   end
 
-  define_method(:myTriangle) do
-    # fill in
+  define_method(:shape?) do
+    if @side1 + @side2 > @side3 || @side1 + @side3 > @side2 || @side2 + @side3 > @side1
+      "true"
+    else
+      "false"
   end
+end
+
 end
