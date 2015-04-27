@@ -6,8 +6,8 @@ class Triangle
   end
 
   define_method(:shape?) do
-    if @side1 + @side2 > @side3 || @side1 + @side3 > @side2 || @side2 + @side3 > @side1
-      
+    if @side1 + @side2 > @side3 && @side1 + @side3 > @side2 && @side2 + @side3 > @side1
+
         if true && @side1 == @side2 && @side2 == @side3
         "equalateral"
 
@@ -20,7 +20,7 @@ class Triangle
 
 
     else
-      "false"
+      "not a triangle"
     end
 end
 end
